@@ -7,6 +7,8 @@ from profiles_api import views
 # 2 With ViewSet, note1: Not mention base_name
 router = DefaultRouter()
 router.register('hello-viewset', views.HelloViewSet, 'hello-viewset')
+# 3 Register our models viewset
+router.register('profile', views.UserProfileViewSet)
 
 
 # 1 With API Views
