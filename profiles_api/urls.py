@@ -9,6 +9,8 @@ router = DefaultRouter()
 router.register('hello-viewset', views.HelloViewSet, 'hello-viewset')
 # 3 Register our models viewset
 router.register('profile', views.UserProfileViewSet)
+# 4 Register UserProfileFeed
+router.register('feed', views.UserProfileFeedViewSet)
 
 
 # 1 With API Views
